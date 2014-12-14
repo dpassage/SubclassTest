@@ -14,6 +14,8 @@
 		6B0C571B1A3E4B6A0097AD69 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B0C571A1A3E4B6A0097AD69 /* Images.xcassets */; };
 		6B0C571E1A3E4B6A0097AD69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B0C571C1A3E4B6A0097AD69 /* LaunchScreen.xib */; };
 		6B0C572A1A3E4B6A0097AD69 /* SubclassTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57291A3E4B6A0097AD69 /* SubclassTestTests.m */; };
+		6B0C57351A3E4B960097AD69 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57341A3E4B960097AD69 /* Gear.m */; };
+		6B0C57381A3E4CAE0097AD69 /* FakeGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		6B0C57231A3E4B6A0097AD69 /* SubclassTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SubclassTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B0C57281A3E4B6A0097AD69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B0C57291A3E4B6A0097AD69 /* SubclassTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubclassTestTests.m; sourceTree = "<group>"; };
+		6B0C57331A3E4B960097AD69 /* Gear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gear.h; sourceTree = "<group>"; };
+		6B0C57341A3E4B960097AD69 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear.m; sourceTree = "<group>"; };
+		6B0C57361A3E4CAE0097AD69 /* SubclassTestTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubclassTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGear.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,8 @@
 				6B0C571A1A3E4B6A0097AD69 /* Images.xcassets */,
 				6B0C571C1A3E4B6A0097AD69 /* LaunchScreen.xib */,
 				6B0C570D1A3E4B6A0097AD69 /* Supporting Files */,
+				6B0C57331A3E4B960097AD69 /* Gear.h */,
+				6B0C57341A3E4B960097AD69 /* Gear.m */,
 			);
 			path = SubclassTest;
 			sourceTree = "<group>";
@@ -107,6 +115,8 @@
 			children = (
 				6B0C57291A3E4B6A0097AD69 /* SubclassTestTests.m */,
 				6B0C57271A3E4B6A0097AD69 /* Supporting Files */,
+				6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */,
+				6B0C57361A3E4CAE0097AD69 /* SubclassTestTests-Bridging-Header.h */,
 			);
 			path = SubclassTestTests;
 			sourceTree = "<group>";
@@ -219,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0C57351A3E4B960097AD69 /* Gear.m in Sources */,
 				6B0C57161A3E4B6A0097AD69 /* ViewController.m in Sources */,
 				6B0C57131A3E4B6A0097AD69 /* AppDelegate.m in Sources */,
 				6B0C57101A3E4B6A0097AD69 /* main.m in Sources */,
@@ -230,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B0C572A1A3E4B6A0097AD69 /* SubclassTestTests.m in Sources */,
+				6B0C57381A3E4CAE0097AD69 /* FakeGear.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -374,6 +387,8 @@
 				INFOPLIST_FILE = SubclassTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SubclassTestTests/SubclassTestTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubclassTest.app/SubclassTest";
 			};
 			name = Debug;
@@ -382,6 +397,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -389,6 +405,7 @@
 				INFOPLIST_FILE = SubclassTestTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SubclassTestTests/SubclassTestTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SubclassTest.app/SubclassTest";
 			};
 			name = Release;

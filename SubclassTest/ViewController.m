@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
+#import "Gear.h"
+
 @interface ViewController ()
+
+@property (nonatomic, strong)Gear *myGear;
 
 @end
 
@@ -16,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.myGear = [[Gear alloc] initWithCogs:12];
 }
 
 - (void)didReceiveMemoryWarning {
