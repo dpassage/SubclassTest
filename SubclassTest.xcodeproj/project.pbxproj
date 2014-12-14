@@ -16,6 +16,7 @@
 		6B0C572A1A3E4B6A0097AD69 /* SubclassTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57291A3E4B6A0097AD69 /* SubclassTestTests.m */; };
 		6B0C57351A3E4B960097AD69 /* Gear.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57341A3E4B960097AD69 /* Gear.m */; };
 		6B0C57381A3E4CAE0097AD69 /* FakeGear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */; };
+		6B0C573B1A3E4E1F0097AD69 /* Ratchet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0C573A1A3E4E1F0097AD69 /* Ratchet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		6B0C57341A3E4B960097AD69 /* Gear.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gear.m; sourceTree = "<group>"; };
 		6B0C57361A3E4CAE0097AD69 /* SubclassTestTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubclassTestTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGear.swift; sourceTree = "<group>"; };
+		6B0C57391A3E4E1E0097AD69 /* SubclassTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubclassTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		6B0C573A1A3E4E1F0097AD69 /* Ratchet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratchet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +100,8 @@
 				6B0C570D1A3E4B6A0097AD69 /* Supporting Files */,
 				6B0C57331A3E4B960097AD69 /* Gear.h */,
 				6B0C57341A3E4B960097AD69 /* Gear.m */,
+				6B0C573A1A3E4E1F0097AD69 /* Ratchet.swift */,
+				6B0C57391A3E4E1E0097AD69 /* SubclassTest-Bridging-Header.h */,
 			);
 			path = SubclassTest;
 			sourceTree = "<group>";
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0C573B1A3E4E1F0097AD69 /* Ratchet.swift in Sources */,
 				6B0C57351A3E4B960097AD69 /* Gear.m in Sources */,
 				6B0C57161A3E4B6A0097AD69 /* ViewController.m in Sources */,
 				6B0C57131A3E4B6A0097AD69 /* AppDelegate.m in Sources */,
@@ -355,9 +361,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SubclassTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SubclassTest/SubclassTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -365,9 +374,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = SubclassTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SubclassTest/SubclassTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
