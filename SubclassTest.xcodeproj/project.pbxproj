@@ -49,6 +49,7 @@
 		6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeGear.swift; sourceTree = "<group>"; };
 		6B0C57391A3E4E1E0097AD69 /* SubclassTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubclassTest-Bridging-Header.h"; sourceTree = "<group>"; };
 		6B0C573A1A3E4E1F0097AD69 /* Ratchet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ratchet.swift; sourceTree = "<group>"; };
+		6B0C573C1A3E4F320097AD69 /* FakeRatchet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeRatchet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +123,7 @@
 				6B0C57271A3E4B6A0097AD69 /* Supporting Files */,
 				6B0C57371A3E4CAE0097AD69 /* FakeGear.swift */,
 				6B0C57361A3E4CAE0097AD69 /* SubclassTestTests-Bridging-Header.h */,
+				6B0C573C1A3E4F320097AD69 /* FakeRatchet.swift */,
 			);
 			path = SubclassTestTests;
 			sourceTree = "<group>";
